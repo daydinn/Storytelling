@@ -8,6 +8,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <link rel="stylesheet" TYPE="text/css" href="index.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+
 <!---<iframe width="0" height="0" src="https://www.youtuberepeater.com/watch?v=TXyX7uHKhjY#gsc.tab=0" frameborder="0" allowfullscreen></iframe>-->
 
 
@@ -22,6 +24,28 @@
  
     
   </audio>
+
+  <script>
+  $(window).scroll(function(){
+
+   var scrollTop = $(this).scrollTop();
+   
+   $('.overplay').css({
+    opacity: function(){
+    var elementHeight= $(this).height(),
+    opacity = ((1 -(elementHeight - scrollTop) / elementHeight) *1.0) +0.2;
+    
+    return opacity;
+   }
+   })
+  
+  
+  
+  
+  
+  });
+  </script>
+
 
 <script>
   window.addEventListener('click', () => {
@@ -131,49 +155,40 @@
   <!----Page1----------------------->
 
   
-  
-  
-   
-  
-
-
-
-  
-  
-  
-  <div class="container-fluid" style="margin-top:10%;"> 
+  <div class="container-fluid" style="margin-top:0%; background-color: black;"> 
     
-      <div class="row">
-        <div class="col-lg-2"></div>
-        <div class="col-lg-8">
-          <div class="p1">
-      <h4 class="text-1">Wilhelm Wagenfeld wurde 1900 als Sohn von Heinrich Wilhelm Wagenfeld und Elisabet Wagenfeld in Bremen Walle geboren</h4></div>
-    </div>
-    
-    <div class="col-lg-2"></div>
-    </div>
-  
-  
-
-     
-      <div class="row">
-       
-       
-       
-        <div class="col-md-12">
+    <div class="row">
+      <div class="col-lg-2"></div>
+      <div class="col-lg-8">
         
-        
-       <img src="img\Walle_Schiet_5606-1024x680.png" class="backgroundbilder background-1" >
-       
-      
-     </div>
-    </div>
+    <h4 class="text-0">Der frühe Wagenfeld</h4>
   </div>
+  
+  <div class="col-lg-2"></div>
+  </div>
+
+
+
+   
+    <div class="row">
      
+     
+     
+      <div class="col-md-12">
+      
+      
+     <img src="img/blick_von_karstadt_auf_marktplatz_um_1930.jpeg" class="backgroundbilder overplay" >
+     
+    
+   </div>
+  </div>
+</div>
+   
 <br>
 <br>
 <br>
-<!----Video-Page-->
+  
+   <!----Video-Page-->
 <div class="container-fluid"> 
     
     
@@ -208,6 +223,49 @@
 
 
 
+
+  
+
+
+
+  
+  
+  
+  
+  
+  
+  <div class="container-fluid" style="margin-top:5%;"> 
+    
+      <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+          <div class="p1">
+      <h4 class="text-1">Wilhelm Wagenfeld wurde 1900 als Sohn von Heinrich Wilhelm Wagenfeld und Elisabet Wagenfeld in Bremen Walle geboren</h4></div>
+    </div>
+    
+    <div class="col-lg-2"></div>
+    </div>
+  
+  
+
+     
+      <div class="row">
+       
+       
+       
+        <div class="col-md-12">
+        
+        
+       <img src="img\Walle_Schiet_5606-1024x680.png" class="backgroundbilder background-1" >
+       
+      
+     </div>
+    </div>
+  </div>
+     
+<br>
+<br>
+<br>
 
 
 
@@ -892,7 +950,7 @@ trigger: ".background-7"
 
 });
 timeline7.from ('.background-7', { x: -100});
-timeline7.from ('.text-7', { y: -450},"+=1.5");
+timeline7.from ('.text-7', { y: -450},"+=0.3");
 
 //seite8
 let timeline8= gsap.timeline({
@@ -902,7 +960,7 @@ trigger: ".background-8"
 
 });
 timeline8.from ('.background-8', { y: -100});
-timeline8.from ('.text-8', { y: -450},"-=0.5");
+timeline8.from ('.text-8', { y: -450},"+=0.3");
 
 
 //seite9
