@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-<title>Wagenfeld </title>
+<title>Wagenfeld Storytelling </title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -9,6 +9,10 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <link rel="stylesheet" TYPE="text/css" href="index.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
 
 <!---<iframe width="0" height="0" src="https://www.youtuberepeater.com/watch?v=TXyX7uHKhjY#gsc.tab=0" frameborder="0" allowfullscreen></iframe>-->
 
@@ -161,7 +165,7 @@
       <div class="col-lg-2"></div>
       <div class="col-lg-8">
         
-    <h4 class="text-0">Der frühe Wagenfeld</h4>
+    <h1 class="text-0">Der frühe Wagenfeld</h1>
   </div>
   
   <div class="col-lg-2"></div>
@@ -189,7 +193,7 @@
 <br>
   
    <!----Video-Page-->
-<div class="container-fluid"> 
+<div class="container-fluid" style="background:black;"> 
     
     
   <div class="row">
@@ -239,7 +243,9 @@
       <div class="row">
         <div class="col-lg-2"></div>
         <div class="col-lg-8">
+          
           <div class="p1">
+           
       <h4 class="text-1">Wilhelm Wagenfeld wurde 1900 als Sohn von Heinrich Wilhelm Wagenfeld und Elisabet Wagenfeld in Bremen Walle geboren</h4></div>
     </div>
     
@@ -274,8 +280,18 @@
  <!----Page2----------------------->
     <div class="container-fluid"> 
       <div class="row">
+
+        
+      </div>
+      
+      <div class="row">
+        <h1 class="h1p2" style="text-align: center;
+        position: absolute;
+        z-index: 1;
+        margin-left: 41%;
+        margin-top: 5%;">Erste Jahre in Bremen</h1>
         <div class="col-md-8">
-         
+        
         <img src="img\wagenfeld2.png" class="wagenfeld2l ">
         <div class="wagenfeld21l">
         <p>Wagenfeld absolvierte ab 1914 
@@ -328,7 +344,11 @@
  
     <!----Page3----------------------->
     <div class="container-fluid"> 
-      
+      <h1 class="h1p3" style="text-align: center;
+        position: absolute;
+        z-index: 1;
+        margin-left: 46%;
+        margin-top: 3%;">Bauhaus</h1>
      
         <div class="row">
           <div class="col-md-8">
@@ -346,7 +366,16 @@
         </div>
           <div class="col-md-4"></div>
           </div>
-      
+        
+
+
+
+
+
+
+
+
+
           <div class="row">
             <div class="col-md-8"></div>
             <div class="col-md-4">
@@ -364,10 +393,83 @@
       
       
       
+        <!------------Erster Popup-->
+         
+        <div class="row">
+          <div class="col-md-12">
+          <div class="popup1" id="popup-1">
+            <div class="overlay"></div>
+            <div class="content1">
+              <div class="close-btn" onclick="togglePopup1()">&times;</div>
+            
+              
+              <!---<h1 style="color:black;">Title</h1>--->
+              <img src="img/Marianne-Brandt-bio350 Kopie.png" class="mariannebrandt1" alt="Profile">
+              <h4 style=" 
+              z-index: 1;
+              color: cyan;
+              position: relative;
+              margin-top: 3%;
+              margin-left: 4%;
+              margin-bottom: 5%;
+              right: 226px;">
+              Marianne Brandt(1893-1983)</h4>
+
+              <p style=" z-index: 1; 
+              color:#fff;
+              text-align: left;
+              font-size: 16px;
+              
+              
+              ">Sie war eine Designerin, Fotografin, Malerin und Bildhauerin.<br>
+              Mit ihren Produktentwürfen in der Metallwerkstatt am Bauhaus,<br>
+              von denen einige als Design-Klassiker noch heute nachgebaut werden,<br>
+              zählt sie zu den bekannten Bauhaus-Künstlerinnen.</p>
+             
+             <img src="img/marianne_Brandt_Selbst.jpg" class="mariannebrandt2" alt="Profile">
+             
+             <img src="img/mariannebrandt4.3.png" class="mariannebrandt3" alt="Profile">
+             
+             <img src="img/Marianne_Brandt_Kaffee.png" class="mariannebrandt4" alt="Profile">
+
+            
+          </div>
+         
+          <button onclick="togglePopup1()" class="button button3 popupbutton1">
+            <i class="fa-solid fa-grip-lines"></i>
+          </button>
+          
+        
+        
+</div>
+</div>
+</div>
+
+<!------------Zweiter Popup-->
+<!----
+<div class="row">
+  <div class="col-md-12">
+  <div class="popup" id="popup-1">
+    <div class="overlay"></div>
+    <div class="content">
+      <div class="close-btn" onclick="togglePopup()">&times;</div>
+      <h1>Title</h1>
       
-      
-      
-      
+      <p style=" z-index: 1; color:black;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo aspernatur laborum rem sed laudantium excepturi veritatis voluptatum architecto, dolore quaerat totam officiis nisi animi accusantium alias inventore nulla atque debitis.</p>
+    </div>
+  </div>
+ 
+  <button onclick="togglePopup()" class="button button32">
+    <i class="fa-solid fa-grip-lines"></i>
+  </button>
+  <div class="x">
+
+  </div>
+
+
+</div>
+</div>   
+--------->   
       
       
       
@@ -390,21 +492,22 @@
     <div class="col-lg-8">
       <div class="text-page-4">
     
-  <h2 class="text-4">Ein Traum von einer Lampe</h2>
+  <h1 class="text-4">Ein Traum von einer Lampe</h1>
   <hr>
   
-<p class="text-4">Begeisterung beflügelt Wilhelm Wagenfeld bei der Lösung dieser Aufgabe nicht. 
+<p class="text-41">Begeisterung beflügelt Wilhelm Wagenfeld bei der Lösung dieser Aufgabe nicht. 
   „Wenig beglückt“ ist er von dem Vorschlag Lazio’s, eine Lampe aus Eisen, Messing und Opalglas zu entwickeln. 
   Diese „störenden Materialangaben“ würde er am liebsten von sich weisen, erinnert sich Wagenfeld in einem 
   1980 verfassten Aufsatz. Dennoch geht der junge Wagenfeld am 4. April 1924 „direkt nach dem Mittagessen“ in sein 
   „stilles Dachzimmer“,  um erste Skizzen anzufertigen. Er grübelt „bis zur völligen Erschöpfung“ und legt sich dann zur Ruhe.
-  
+  </p>
 
-  
+  <p class="text-41">
   Damit folgt er einer offenbar genialen Eingebung. „Ich lag gewiss sehr bald in einem festen Schlaf. 
 Denn als dann im Traum die Lampe vor mir stand, hell wie ein Tagbild, ganz so wie jetzt auf meinem Tisch, 
 erwachte ich sofort.“ Der so unverhofft und rasch erleuchtete Bauhaus-Novize fertigt direkt eine Zeichnung 
 für die Metallwerkstatt an. Eine beispiellose, wenn auch nicht ganz lückenlose, Erfolgsgeschichte nimmt ihren Anfang.</p>
+</p>
 <hr>
 <hr>
 <hr>
@@ -422,7 +525,7 @@ für die Metallwerkstatt an. Eine beispiellose, wenn auch nicht ganz lückenlose
 <hr>
 <hr>
 <hr>
-<p class="text-4">Viele Besucher der Leipziger Herbstmesse 1924 bewundern den schlichten und schönen Lampenentwurf, der eindrucksvoll 
+<p class="text-42">Viele Besucher der Leipziger Herbstmesse 1924 bewundern den schlichten und schönen Lampenentwurf, der eindrucksvoll 
 in einer seriellen Reihung vorgestellt wird. Doch gerade diese Präsentationsform schafft ein gravierendes Missverständnis. 
 Überdies sind manche Bauhaus-Werkstätten in der Startphase noch gar nicht entsprechend ausgestattet.
 Die unweigerliche Folge: In jeder Wagenfeld Tischleuchte steckt anfangs noch sehr viel Handarbeit, sie werden horrend 
@@ -459,14 +562,95 @@ zu bedienen. Sie bleibt zunächst eher Kunst- als Gebrauchsgegenstand.</p>
      
  <!----Page5----------------------->
     <div class="container-fluid"> 
+     <!------------Zweiter Popup-->
+         
+     <div class="row">
+      <div class="col-md-12">
+      <div class="popup2" id="popup-2">
+        <div class="overlay"></div>
+        <div class="content2">
+          <div class="close-btn" onclick="togglePopup2()">&times;</div>
+          <!---<h1 style="color:black;">Title</h1>--->
+          <img src="img/Bauhausfest.11.png" class="bauhaus1" alt="Profile">
+
+          
+          <p style=" z-index: 1; 
+          color:#fff;
+          font-size:smaller;
+          font-style: italic;
+          
+          
+          ">Bauhausfest bei Weimar am 29. November 1924</p>
+
+          <p style=" z-index: 1; 
+          color:#fff;
+          text-align: left;
+          font-size: 14px;
+          margin-bottom: 5%;
+
+
+        ">Die katastrophalen Erfahrungen des Ersten Weltkrieges motivierten die Bauhäusler*innen<br>  das Leben,
+        die Gesellschaft und den Alltag radikal neu zu denken.<br>
+        In seinem Manifest forderte Walter Gropius einen Neubeginn der Baukultur,<br> 
+        der für die damalige Zeit visionäre Züge trug. Akademische Zugangsbedingungen wurden aufgehoben,<br>
+         jeder begabte junge Mensch sollte am Bauhaus in Weimar studieren können,<br>
+          unabhängig von Schulabschluss, Geschlecht oder Staatszugehörigkeit.<br> 
+         Rund 150 bis 200 Studierende waren am Weimarer Bauhaus eingeschrieben,<br> 
+         darunter je nach Semester 25 bis 50 Prozent Frauen und 17 bis 33 Prozent ausländische Studierende.</p>
+        
+         <img src="img/Bauhauswerkstatt11.png" class="bauhaus2" alt="Profile">
+         <p style=" 
+         
+    
+    text-align: left;
+   
+    font-size: smaller;
+    position: absolute;
+    top: 83.5%;
+    left: 9%;
+
+        
+         
+         
+         ">Bauhaus Werkstatt, 1923</p>
+         
+        
+         <img src="img/teekanne11.png" class="bauhaus3" alt="Profile">
+         <p style=" 
+         
+         text-align: left;
+         font-size: x-small;
+         position: absolute;
+         top: 83.5%;
+         left: 46.5%;
+         text-align: left;
      
+             
+              
+              
+              ">Eine Teekanne, die Wagenfeld<br>
+                im Bauhaus entwickelt hat</p>
+        </div>
+      </div>
+
+
+
+     
+      <button onclick="togglePopup2()" class="button button3 popupbutton2">
+        <i class="fa-solid fa-grip-lines"></i>
+      </button>
+      
+    
+    
+</div>
+</div>
      
       <div class="container-fluid"> 
       
   
         <div class="row">
-          <div class="col-lg-2"></div>
-          <div class="col-lg-8">
+          <div class="col-lg-3"></div>
+          <div class="col-lg-6">
             <div class="text-page-4">
           
       <hr>
@@ -476,7 +660,15 @@ zu bedienen. Sie bleibt zunächst eher Kunst- als Gebrauchsgegenstand.</p>
       <hr>
       <hr>
      
-      <h4 class="text-5" style="letter-spacing: 4px; line-height: 137%; ">
+
+      <h1 class="h1t5" style="margin-top: -19%;
+      margin-left: 22%;
+      position: absolute;">Schließung des Bauhauses</h1>
+      <hr>
+      <hr>
+      <hr>
+
+      <h4 class="text-5" style="letter-spacing: 4px; line-height: 137%; margin-top: -9%; ">
       
         Das Bauhaus stand vom Tag seiner Gründung an im Kreuzfeuer unterschiedlicher politischer Ausrichtungen.
         Nachdem sich die Machtverhältnisse nach der Landtagswahl in Thüringen im Februar 1924 geändert hatten, 
@@ -496,7 +688,7 @@ zu bedienen. Sie bleibt zunächst eher Kunst- als Gebrauchsgegenstand.</p>
       </div>
       </div>
       
-      <div class="col-lg-2"></div>
+      <div class="col-lg-3"></div>
       </div>
      
       <div class="row">
@@ -516,8 +708,8 @@ zu bedienen. Sie bleibt zunächst eher Kunst- als Gebrauchsgegenstand.</p>
   
 
     <div class="row">
-      <div class="col-lg-2"></div>
-      <div class="col-lg-8">
+      <div class="col-lg-3"></div>
+      <div class="col-lg-6">
         <div class="text-page-5">
       
   <hr>
@@ -542,13 +734,72 @@ Dessau gekommen waren, verbreiteten die Ideen des Bauhauses in ihren Ländern we
   </div>
   </div>
   
-  <div class="col-lg-2"></div>
+  <div class="col-lg-3"></div>
   </div>
   
-  
-  <div class="container-fluid"> 
+  <!--------------Popup3.-->
+  <div class="row">
+    <div class="col-md-12">
+    <div class="popup3 " id="popup-3">
+      <div class="overlay"></div>
+      <div class="content3">
+        <img src="img/Laszlo-Moholy-Nagy.jpg" class="lazio1" alt="Profile">
+
+        <div class="close-btn" onclick="togglePopup3()">&times;</div>
+        <h4 style=
+        "z-index: 1;
+        color: cyan;
+        position: relative;
+        margin-top: 3%;
+        margin-left: 4%;
+        margin-bottom: 5%;
+        right: 226px;"
+        
+        >Lázló Moholy-Nagy</h4>
+        
+        <p style=" 
+        z-index: 1; 
+          color:#fff;
+          text-align: left;
+          font-size: 14px;
+          margin-bottom: 5%;">László Moholy-Nagy wurde am 20. Juli 1895 in Bácsborsód, Österreich-Ungarn geboren. Er war Maler, Fotograf, Bühnenbildner, Typograf und Lehrer am Bauhaus.
+
+Moholy-Nagy beschäftigte sich erst nach seinem Jurastudium 1918 mit Malerei. Seine Motive sind nichtgegenständlich und stark von Kasimir Malewitsch, der De-Stijl-Bewegung und dem Konstruktivismus beeinflusst. Er unterrichtete von 1923 bis 1928 als Formmeister der Metallwerkstatt und Leiter des Vorkurses am Bauhaus und erschuf das erste deutsche Lifestylemagazin „die neue linie“. Erstmals wurde ein Magazin nicht in Schreibschrift, sondern in Serifenloser Universal-Schrift betitelt. Moholy-Nagys großzügigen Montagen aus Schwarzweißfotos und Farbflächen prägten das Erscheinungsbild.
+
+Moholy-Nagy heiratete in erster Ehe die Fotografin Lucia Moholy (geb. Schulz) und in zweiter Ehe die Schauspielerin und Kunsthistorikerin Sibyl Moholy-Nagy (geb. Pietzsch), mit der er zwei Töchter bekam.
+
+1934 erhielt Moholy-Nagy in Deutschland Berufsverbot und emigrierte zunächst nach Amsterdam, dann nach England und schließlich in die USA wo er das New Bauhaus und später die School of Design in Chicago gründete und leitete.
+
+Moholy-Nagy starb am 24. November 1946 in Chicago, wo er auch bestattet wurde.</p>
       
-  </div>
+<iframe width="340" height="230" src="https://www.youtube.com/embed/Efz67zwDU6k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="left: 3%;
+    position: absolute;"></iframe>
+<p style=" 
+         
+         font-size: x-small;
+    position: absolute;
+    top: 95.5%;
+    left: 3%;
+    text-align: left;
+     
+             
+              
+              
+              ">Mohology-Nagy -Portrait: Vom Bauhaus<br>
+zum New Bauhaus und zur ‚School of Design’</p>
+
+
+</div>
+    </div>
+   
+    <button onclick="togglePopup3()" class="button button5 popupbutton3" id="button5">
+      <i class="fa-solid fa-grip-lines"></i>
+    </button>
+    
+  
+  
+</div>
+</div>
     <div class="row">
       <div class="col-md-8">
        
@@ -599,18 +850,73 @@ Dessau gekommen waren, verbreiteten die Ideen des Bauhauses in ihren Ländern we
     
     
      <div class="container-fluid"> 
+
+ <!--------------Popup4.-->
+ <div class="row">
+  <div class="col-md-12">
+  <div class="popup4 " id="popup-4">
+    <div class="overlay"></div>
+    <div class="content4">
+      <div class="close-btn" onclick="togglePopup4()">&times;</div>
+      <h4  style="
+         z-index: 1;
+    color: cyan;
+    position: relative;
+    margin-top: 1%;
+    margin-left: 28%;
+    margin-bottom: 5%;
+    left: -15%;">Einige bekannte Entwürfe </h4 >
+      <!---
+      <p style="     
+      z-index: 1;
+      color: #fff;
+      text-align: left;
+      font-size: 16px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo aspernatur laborum rem sed laudantium excepturi veritatis voluptatum architecto, dolore quaerat totam officiis nisi animi accusantium alias inventore nulla atque debitis.</p>
+    --->
+    <img src="img/jena1.png" class="jena1" alt="Profile">
+    <img src="img/jena2.png" class="jena2" alt="Profile">
+    <img src="img/jena3.png" class="jena3" alt="Profile">
+    <img src="img/jena4.png" class="jena4" alt="Profile">
+
+  
+  </div>
+  </div>
+ 
+  <button onclick="togglePopup4()" class="button button5 popupbutton4" id="button5">
+    <i class="fa-solid fa-grip-lines"></i>
+  </button>
+  
+
+
+</div>
+</div>
+      
       <div class="row">
-        <div class="col-md-2"></div>
+        <div class="col-md-3"></div>
         
-       <div class="col-md-8">
+       <div class="col-md-6">
+        <h1 style="text-align: center;
+        position: absolute;
+        z-index: 1;
+        margin-top: 16%;
+        margin-left: 30.5%;" class="h1p6">Jenaer Glaswerk</h1>
+
       <div class="text-page-6">
+
         <h4 class="text-7">Nachdem die Staatliche Bauhochschule Dessau geschlossen wurde, kam Wagenfeld in 1931 als künstlerischer Mitarbeiter zum Jenaer Glaswerk Schott & Gen. 
           Auf seine Initiative hin wurde Lázló Moholy-Nagy engagiert, sein ehemaliger Lehrer am Bauhaus, um mit ihm zusammen eine Werbestrategie für das Unternehmen 
           zu entwickeln.Moholy-Nagy war in den Bereichen Fotografie und Grafikdesign sehr talentiert. Wagenfeld und er brachten völlig neu gestaltete Flyer heraus und konzipierten 
           sehr fortschrittliche Kampagne. </h4>
+          <h4 class="text-71">
+            In dieser Zeit entstanden  bekannte Entwürfe wie das Teeservice aus feuerfestem Glas, 
+            die zu Klassikern wurden und bis heute produziert werden. Darüber hinaus gestaltete Wagenfeld 
+            Klinken, Türbeschläge und Haushaltsgegenstände für verschiedene Firmen </h4>
+           </div>
         </div>
-      </div>
-        <div class="col-md-2"></div>
+       
+         
+  
+        <div class="col-md-3"></div>
 
         </div>
         </div>
@@ -633,45 +939,16 @@ Dessau gekommen waren, verbreiteten die Ideen des Bauhauses in ihren Ländern we
  
  
  
-   <div class="container-fluid"> 
-    <div class="row">
-      <div class="col-md-2"></div>
-      
-     <div class="col-md-8">
-    <div class="text-page-6">
-      <h4 class="text-8">
-       In dieser Zeit entstanden  bekannte Entwürfe wie das Teeservice aus feuerfestem Glas, 
-       die zu Klassikern wurden und bis heute produziert werden. Darüber hinaus gestaltete Wagenfeld 
-       Klinken, Türbeschläge und Haushaltsgegenstände für verschiedene Firmen </h4>
-      </div>
-    </div>
-      <div class="col-md-2"></div>
-
-      </div>
-      </div>
   
-  
-  
-  
-  
-  
-      <div class="container-fluid"> 
-    <div class="row">
-     <div class="col-md-12">
-      <img src="img\jeanerglass-zusammen8.png" class="backgroundbilder background-8" >
-     </div>
-    </div>
-   </div>
- 
- 
      <!----Page9----------------------->
    
      <div class="container-fluid"> 
       <div class="row">
-        <div class="col-md-2"></div>
+        <div class="col-md-3"></div>
         
-       <div class="col-md-8">
+       <div class="col-md-6">
       <div class="text-page-6">
+        
         <h4 class="text-9">
           Am Bauhaus waren  verschiedene Disziplinen zusammengeflossen, neben der Fotografie und Produktgestaltung 
           eben auch Grafikdesign und Typografie. Die lebendige Zusammenführung der verschiedenen Künste prägte Wagenfeld zeitlebens
@@ -679,7 +956,7 @@ Dessau gekommen waren, verbreiteten die Ideen des Bauhauses in ihren Ländern we
            die man heute Guerilla-Marketing, Promotion oder Product Placement nennt und verhalf dem Jenaer Glaswerk damit zu großem wirtschaftlichen Erfolg. </h4>
         </div>
       </div>
-        <div class="col-md-2"></div>
+        <div class="col-md-3"></div>
   
         </div>
         </div>
@@ -883,7 +1160,7 @@ trigger: ".wagenfeld2r"
 gsap.from ('.text-1', { x: -450, scrollTrigger: ".background-1"},"+=3.0");
 gsap.from('.background-1', { x: -100 },"-=1.0");
 timeline1.from('.background-2', { y: -100 },"-=1.0");
-
+timeline1.from('.h1p2', { x: -150 });
 timeline1.from('.wagenfeld2l', { y: -150 });
 timeline1.from('.wagenfeld21l', { y: -150});
 timeline1.from('.wagenfeld2r', { y: -150});
@@ -899,7 +1176,9 @@ trigger: ".wagenfeld31r"
 
 });
 timeline3.from('.background-3', { y: -75 },"-=0.5");
+timeline1.from('.h1p3', { x: -150 },"-=3.5");
 timeline3.from('.wagenfeld3l', { y: -150 });
+timeline3.from('.popupbutton1', { y: -150},"-=1.2");
 timeline3.from('.wagenfeld31l', { x: -150});
 timeline3.from('.wagenfeld3r', { y: +150}, "-=0.2");
 timeline3.from('.wagenfeld31r', { x: +150}, "-=0.2");
@@ -917,6 +1196,9 @@ trigger: ".background-4"
 timeline4.from('.background-4', { y: -75 },);
 timeline4.from ('.text-4', { y: -450},"+=0.5");
 
+timeline4.from ('.text-41', { y: -450},"+=0.5");
+timeline4.from ('.text-42', { y: -450},"+=0.5");
+
 //seite 5
 let timeline5= gsap.timeline({
 scrollTrigger: {
@@ -926,7 +1208,9 @@ trigger: ".background-5"
 });
 
 timeline5.from('.background-5', { y: -75 },);
+timeline5.from ('.h1t5', { y: -450},"+=0.5");
 timeline5.from ('.text-5', { y: -450},"+=0.5");
+timeline5.from ('.popupbutton2', { y: -450},"-=0.5");
 
 //seite6
 let timeline6= gsap.timeline({
@@ -941,6 +1225,7 @@ timeline6.from('.wagenfeld4l', { x: -150 });
 timeline6.from('.wagenfeld41l', { x: -150});
 timeline6.from('.wagenfeld4r', { x: +150}, "-=0.5");
 timeline6.from('.wagenfeld41r', { x: +150}, "-=0.5");
+timeline4.from('.popupbutton3', { x: -75 },);
 
 //seite7
 let timeline7= gsap.timeline({
@@ -950,7 +1235,10 @@ trigger: ".background-7"
 
 });
 timeline7.from ('.background-7', { x: -100});
+timeline7.from ('.h1p6', { y: -450},"+=0.0");
 timeline7.from ('.text-7', { y: -450},"+=0.3");
+timeline7.from ('.text-71', { y: -450},"+=0.3")
+timeline7.from ('.popupbutton4', { y: -450},"-=0.3")
 
 //seite8
 let timeline8= gsap.timeline({
@@ -987,6 +1275,20 @@ timeline10.from('.wagenfeld91l', { y: -150});
 timeline10.from('.wagenfeld9r', { y: -150}, "-=0.5");
 timeline10.from('.wagenfeld91r', { y: -150}, "-=0.5");
 
+
+
+function togglePopup1(){
+  document.getElementById("popup-1").classList.toggle("active");
+}
+function togglePopup2(){
+  document.getElementById("popup-2").classList.toggle("active");
+}
+function togglePopup3(){
+  document.getElementById("popup-3").classList.toggle("active");
+}
+function togglePopup4(){
+  document.getElementById("popup-4").classList.toggle("active");
+}
 
 
 
